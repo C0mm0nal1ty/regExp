@@ -4,12 +4,14 @@
 //ex. http://regexone.com:80/page,
 //    scheme/host:port/resourcepath
 //
+//this test cannot run because syntax dictates for // to be commented out
 
 function teststring(str) {
 //alternate solutions'
+//(\w+)://((\w+)/|([\w.-]+):?([\d]+)?/|)
+//(\w+)://([\w\-\.]+)(:(\d+))?
 
-
-  let regex = / /g;
+  let regex = /(\w+)://([\w\-\.]+)(:(\d+))?/g;
   let found = str.match(regex);
 
   if (found !== null) {
