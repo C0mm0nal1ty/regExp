@@ -4,6 +4,7 @@
 //
 
 function teststring(str) {
+  //alternate solution: aa+b*+c+
   let regex = /[a]+[bc]+/g;
   let found = str.match(regex);
 

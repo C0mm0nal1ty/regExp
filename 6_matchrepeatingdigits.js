@@ -6,6 +6,7 @@
 //a{1,3} - match a more than 1 times and less than 3 times
 //[wxz]{5} - match any wxz character five times
 function teststring(str) {
+  // alternate solution : waz{3,5}up
   let regex = /[z]{2,1000}/g;
   let found = str.match(regex);
 

@@ -1,6 +1,8 @@
 //Example 2
 // . - wildcard
 function teststring(str){
+
+  //alternate solution : ...\.
   let regex = /\d/g;
   let found = str.match(regex).join('');
 

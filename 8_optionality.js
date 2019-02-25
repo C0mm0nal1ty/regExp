@@ -4,7 +4,8 @@
 // ab?c matches abc or ac
 
 function teststring(str) {
-  let regex = /[a]+[bc]+/g;
+  //alternate solution: \d+files? found\?
+  let regex = /\?/g;
   let found = str.match(regex);
 
   if (found !== null) {
@@ -13,7 +14,7 @@ function teststring(str) {
 
 }
 
-let str1 = ['1 files found?', '2 files found?', '2 files found?','No files found?.'];
+let str1 = ['1 files found?', '2 files found?', '24 files found?','No files found.'];
 let newstr = [];
 
 for (let word of str1) {

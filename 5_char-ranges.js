@@ -1,6 +1,7 @@
 //Example 5
 // [A-Za-Z0-9] - specified ranges
 function teststring(str){
+  //alternate solution: [A-C][n-p][a-c]
   let regex = /[A-C]/g;
   let found = str.match(regex).join('');
 
