@@ -1,13 +1,13 @@
 //Example 13
-//more on groups
-//using other quantifiers inside the capture group patterns
+// | - pipe,logical OR
+//use it inside regex to specify a search
+//ex. buy more (milk | bread |juice)
 
 function teststring(str) {
 //alternate solutions
-//(\d+)x(\d+)
+// I love (cats|dogs)
 
-
-  let regex = /(\d{4})x(\d{3,4})/g;
+  let regex = /I love cats|dogs/g;
   let found = str.match(regex);
 
   if (found !== null) {
@@ -16,8 +16,8 @@ function teststring(str) {
 
 }
 
-//skip the last element
-let str1 = ['1280x720', '1920x1600', '1024x768'];
+//skip the last 2 element
+let str1 = ['	I love cats', 'I love dogs', 'I love logs','I love cogs'];
 let newstr = [];
 
 for (let word of str1) {
