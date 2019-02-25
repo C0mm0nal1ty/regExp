@@ -1,14 +1,13 @@
 //Example 12
-//nested groups
-//use double parenthesis for this one
-//
+//more on groups
+//using other quantifiers inside the capture group patterns
 
 function teststring(str) {
-//solutions
-//(\w+ (\d+))
+//alternate solutions
+//(\d+)x(\d+)
 
 
-  let regex = /(.+(\d{4}))/g;
+  let regex = /(\d{4})x(\d{3,4})/g;
   let found = str.match(regex);
 
   if (found !== null) {
@@ -18,7 +17,7 @@ function teststring(str) {
 }
 
 //skip the last element
-let str1 = ['Jan 1987', 'May 1969', 'Aug 2011'];
+let str1 = ['1280x720', '1920x1600', '1024x768'];
 let newstr = [];
 
 for (let word of str1) {
