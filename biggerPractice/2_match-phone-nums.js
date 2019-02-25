@@ -1,12 +1,11 @@
-//Example A1
-//skip the last one
-
+//Example A2
+//match the phone numbers
+//and capture the area code
 
 function teststring(str) {
 //alternate solutions
-//-?[\d,]*\.?[\de]+[^p]$
-
-  let regex = /^-?\d+(,\d+)*(\.\d+(e\d+)?)?$/g;
+//1?[\s-]?\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}
+  let regex = /^\d? ?\(?(\d{3})\)?[ -]?\d{3}[ -]?\d{4}$/g;
   let found = str.match(regex);
 
   if (found !== null) {
@@ -16,9 +15,10 @@ function teststring(str) {
 }
 
 //skip the last element
-let str1 = ['3.14529',
- '-255.34',
-'128','1.9e10','123,340.00','720p'];
+let str1 = ['415-555-1234',
+ '650-555-2345',
+'(416)555-3456','202 555 4567','4035555678'
+,'1 416 555 9292'];
 
 let newstr = [];
 
