@@ -13,7 +13,6 @@ function teststring(str) {
     return true;
   }
 
-
 }
 
 let str1 = ['wazzzzzup', 'wazzzup', 'wazup'];
