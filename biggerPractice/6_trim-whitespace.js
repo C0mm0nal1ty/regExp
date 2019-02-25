@@ -1,5 +1,6 @@
-//Example A5
-//
+//Example A6
+// extract the contents between whitespace Characters
+//avoid the start and end whitespaces
 
 function teststring(str) {
 //alternate solutions'
