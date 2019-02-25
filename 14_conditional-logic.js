@@ -1,4 +1,4 @@
-//Example 13
+//Example 14
 // | - pipe,logical OR
 //use it inside regex to specify a search
 //ex. buy more (milk | bread |juice)
