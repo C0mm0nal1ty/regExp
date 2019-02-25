@@ -1,0 +1,14 @@
+
+1. What are regular expressions?
+Technique, way to extracting information from text(code,log files, spreadsheets, documents)
+
+2.How do they work?
+They match a character with a  specified pattern.
+it can match ASCII or unicode characters
+
+Notes on the different expressions types
+\d - digits
+. - wildcard - match any character except the space
+[] - only match a specific character([abc] match only a,b, or c)
+
+//EOF
